@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Portfolio.css">
+        <title>Portfolio</title>
+        <link rel="icon" href="Portfolio Src Img/pic.jpg">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+<body>
+
+
+<header>
+    <h1>SAFRIN NISHA</h1>
+    <h3>Crafting Digital Dreams : Transforming Code into Captivating Web Experiences, Unleashing the Future!</h3>
+    <ul>
+        <li><a href="#About">About |</li></a>
+        <li><a href="#Skills">Skills |</li></a>
+        <li><a href="#Projects">Projects |</li></a>
+        <li><a href="#Resume">Resume |</li></a>
+        <li><a href="">Contact</li></a>
+    </ul>
+</header>
+
+
+<div id="About">
+    <h1>ABOUT</h1>
+        <div id="sub">
+            <p>Hello! I'm Safrin Nisha, a final year BCA student at Justice Basheer Ahmed Sayeed College. My academic Journey has equipped me with a solid foundation in Programming languages such as C, C++, Java and PHP, as well as a basic understanding of data Structures. Driven by a passion for Web development, I have Self-taught myself HTML, CSS and Java Script to Create Engaging and functional Website. I'm passionate about exploring new technology and expanding my knowledge to achieve more in this field.</p>
+            <img src="Portfolio Src Img/pic.jpg" width="250px" height="250px">
+        </div>
+</div>
+
+        
+        
+<div id="Skills">
+    <h1>SKILLS</h1>
+        <div id="One">
+            <button>Technical skills</button>
+                <div id="Tech">
+                    <div id="sub-button-one">
+                        <button>Programming Languages</button>
+                            <div id="lang">
+                                <img src="Portfolio Src Img/c.jpg" width="120px" height="120px">
+                                <img src="Portfolio Src Img/c++.jpg" width="120px" height="120px">
+                                <img src="Portfolio Src Img/java.jpg" width="120px" height="120px">
+                                <img src="Portfolio Src Img/php.jpg" width="120px" height="120px">
+                            </div>
+                    </div>
+                    <div id="sub-button-two">
+                        <button>Web Development Skills</button>
+                            <div id="Web">
+                                <img src="Portfolio Src Img/html.jpg" width="120px" height="120px">
+                                <img src="Portfolio Src Img/css.jpg" width="120px" height="120px">
+                                <img src="Portfolio Src Img/js.jpg" width="120px" height="120px">
+                            </div>
+                    </div>
+                    <div id="sub-button-three">
+                        <button>Framework and Libraries</button>
+                            <div id="frame">
+                                <img src="Portfolio Src Img/node.jpg" width="120px" height="120px">
+                            </div>
+                    </div>
+                    <div id="sub-button-four">
+                        <button>Tools and Platform</button>
+                            <div id="tools">
+                                <img src="Portfolio Src Img/git.jpg" width="120px" height="120px">
+                                <img src="Portfolio Src Img/github.jpg" width="120px" height="120px">
+                                <img src="Portfolio Src Img/vs.jpg" width="120px" height="120px">
+                        </div>
+                    </div> 
+                    <div id="sub-button-five">
+                        <button>Databases</button>
+                            <div id="base">
+                                <img src="Portfolio Src Img/sql.jpg" width="120px" height="120px">
+                                <img src="Portfolio Src Img/mysql.jpg" width="120px" height="120px">
+                            </div>
+                    </div>
+                </div>
+        </div>
+        <div id="two">
+            <button >Soft Skills</button>
+                <div id="soft">
+                    <button>Team-Work</button>
+                    <button>Time Mangement</button>
+                    <button>Problem Solving</button>
+                    <button>Communication</button>
+                </div>
+        </div>
+</div>
+
+
+<div id="Projects">
+    <h1>PROJECT</h1>
+        <div id="pro1">
+            <input type="checkbox" id="toggle1">
+                <div id="cont1">
+                    <label for="toggle1">
+                        <img src="Portfolio Src Img/pro1.jpg" alt="C" width="180px" height="100px">
+                        <h2>NUMBER GUESSING GAME</h2>
+                        <h4>C Programming</h4>
+                    </label>   
+                    <div id="code-sec1">
+                        <h3>Project Code</h3>
+                        <pre><code>
+
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+#include &lt;time.h&gt; 
+
+int main()
+{
+    int number, guess, attempts = 0;
+    char choice;
+    srand(time(0));                                             
+    number = rand() % 100 + 1;                                  
+                            
+    printf("Welcome to the Guess the Number Game!\n");
+    printf("I have selected a number between 1 and 100.\n");
+                                                               
+    do
+    {
+        printf("Enter your guess: ");
+        scanf("%d", &guess);
+        attempts++;
+                            
+        if (guess > number) 
+        {
+            printf("Too high! Try again.\n");
+        } 
+        else if (guess < number)
+        {
+            printf("Too low! Try again.\n");
+        }
+        else 
+        {
+            printf("Congratulations! You guessed the number in %d attempts.\n", attempts);
+            break;
+        }
+    } while (1);
+                            
+    printf("Do you want to play again? (y/n): ");               
+    scanf(" %c", &choice);
+                            
+    if (choice == 'y' || choice == 'Y') 
+    {
+        main();                                                
+    } 
+    else 
+    {
+        printf("Thank you for playing! Goodbye.\n");
+    }
+                            
+    return 0;
+}
+                            
+                        </code></pre>
+                </div>
+                <div id="out-sec1">
+                    <h3>Project Output</h3>
+                    <pre><code>
+
+Welcome to the Guess the Number Game!
+I have selected a number between 1 and 100.
+Enter your guess: 30
+Too high! Try again.
+Enter your guess: 20
+Too low! Try again.
+Enter your guess: 25
+Too low! Try again.
+Enter your guess: 28
+Congratulations! You guessed the number in 4 attempts.
+Do you want to play again? (y/n): n
+Thank you for playing! Goodbye.
+                    </code></pre>
+                </div>
+            </div>
+    </div> 
+
+    <div id="pro2">
+        <input type="checkbox" id="toggle2">
+            <div id="cont2">
+                <label for="toggle2">
+                    <img src="Portfolio Src Img/pro2.jpg" alt="C" width="180px" height="100px">
+                    <h2>SIMPLE BANKING SYSTEM</h2>
+                    <h4>C++ Programming</h4>
+                </label>   
+                <div id="code-sec2">
+                    <h3>Project Code</h3>
+                        <pre><code>
+
+#include &lt;iostream.h&gt;
+
+void showMenu()
+{
+    cout << "Simple Banking System" <<endl;
+    cout << "1. Check Balance" <<endl;
+    cout << "2. Deposit Money" <<endl;
+    cout << "3. Withdraw Money" <<endl;
+    cout << "4. Exit" <<endl;
+    cout << "Enter your choice: ";
+}
+                                    
+int main()
+{
+    int choice;
+    double balance = 0.0;
+    double amount;
+                                    
+    do 
+    {
+        showMenu();
+        cin >> choice;
+                                    
+        switch(choice) 
+        {
+            case 1:
+            cout << "Your current balance is: $" << balance << endl;
+            break;
+            case 2:
+            cout << "Enter amount to deposit: $";
+            cin >> amount;
+            if (amount > 0) 
+            {
+                balance += amount;
+                cout << "Deposit successful. Your new balance is: $" << balance << endl;
+            } 
+            else
+            {
+                cout << "Invalid amount. Please enter a positive value." << endl;
+            }
+            break;
+            case 3:
+            cout << "Enter amount to withdraw: $";
+            cin >> amount;
+            if (amount > 0 && amount <= balance) 
+            {
+                balance -= amount;
+                cout << "Withdrawal successful. Your new balance is: $" << balance << endl;
+            } 
+            else
+            {
+                cout << "Invalid amount. Please enter a value less than or equal to your balance." << endl;
+            }
+            break;
+            case 4:
+            cout << "Exiting..." << endl << "Thankyou for using this service";
+            break;
+            default:
+            cout << "Invalid choice! Please try again." << endl;
+        }
+                                    
+        cout << endl; 
+    } while (choice != 4);
+                                    
+    return 0;
+}                    
+                            </code></pre>
+    </div>
+    <div id="out-sec2">
+    <h3>Project Output</h3>
+                        
+                        <pre><code>
+
+Simple Banking System
+1. Check Balance
+2. Deposit Money
+3. Withdraw Money
+4. Exit
+Enter your choice: 2
+Enter amount to deposit: $100
+Deposit successful. Your new balance is: $100
+                            
+Simple Banking System
+1. Check Balance
+2. Deposit Money
+3. Withdraw Money
+4. Exit
+Enter your choice: 3
+Enter amount to withdraw: $45
+Withdrawal successful. Your new balance is: $55
+                            
+Simple Banking System
+1. Check Balance
+2. Deposit Money
+3. Withdraw Money
+4. Exit
+Enter your choice: 1
+Your current balance is: $55
+                            
+Simple Banking System
+1. Check Balance
+2. Deposit Money
+3. Withdraw Money
+4. Exit
+Enter your choice: 4
+Exiting... 
+
+Thankyou, for using this sevice!
+                        </code></pre>
+                    </div>
+                </div>
+            </div>
+            <div id="pro3">
+                <input type="checkbox" id="toggle3">
+                <div id="cont3">
+                    <label for="toggle3">
+                    <img src="Portfolio Src Img/pro3.jpg" alt="C" width="180px" height="100px">
+                    <h2>STUDENT MANAGEMENT SYSTEM</h2>
+                    <h4>Java Programming</h4>
+                    </label>   
+                    <div id="code-sec3">
+                        <h3>Project Code</h3>
+                        <pre>
+                            <code>
+
+import java.util.ArrayList;
+import java.util.Scanner;
+                                
+class Student 
+{
+    private int id;
+    private String name;
+    private int age;
+    private String grade;
+                                
+    public Student(int id, String name, int age, String grade) 
+    {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.grade = grade;
+    }
+                                
+    public int getId() 
+    {
+        return id;
+    }
+                                
+    public String getName() 
+    {
+        return name;
+    }
+                                
+    public int getAge() 
+    {
+        return age;
+    }
+                                
+    public String getGrade() 
+    {
+        return grade;
+    }
+                                
+    @Override
+    public String toString() 
+    {
+        return "Student ID: " + id + ", Name: " + name + ", Age: " + age + ", Grade: " + grade;
+    }
+}
+                                
+public class StudentManagementSystem 
+{
+    private static ArrayList<Student> students = new ArrayList<>();
+    private static Scanner scanner = new Scanner(System.in);
+                                
+    public static void main(String[] args) 
+    {
+        while (true) 
+        {
+            displayMenu();
+            handleUserInput();
+        }
+    }
+                                
+    private static void displayMenu() 
+    {
+        System.out.println("\nStudent Management System");
+        System.out.println("1. Add Student");
+        System.out.println("2. View Students");
+        System.out.println("3. Search Student");
+        System.out.println("4. Delete Student");
+        System.out.println("5. Exit");
+        System.out.print("Choose an option: ");                                
+    }
+                                
+    private static void handleUserInput()
+    {
+        int choice = scanner.nextInt();
+        scanner.nextLine(); 
+                                
+        switch (choice) {
+        case 1:
+        addStudent();
+        break;
+        case 2:
+        viewStudents();
+        break;
+        case 3:
+        searchStudent();
+        break;
+        case 4:
+        deleteStudent();
+        break;
+        case 5:
+        System.out.println("Exiting...,Thankyou!");
+        System.exit(0);
+        break;
+        default:
+        System.out.println("Invalid option. Please try again.");
+    }
+}
+                                
+private static void addStudent() 
+{
+    System.out.print("Enter student name: ");
+    String name = scanner.nextLine();
+    System.out.print("Enter student age: ");
+    int age = scanner.nextInt();
+    scanner.nextLine(); 
+    System.out.print("Enter student grade: ");
+    String grade = scanner.nextLine();
+                                
+    int id = students.size() + 1;
+    Student student = new Student(id, name, age, grade);
+    students.add(student);
+    System.out.println("Student added: " + student);
+}
+                                
+private static void viewStudents() 
+{
+    for (Student student : students) 
+    {
+        System.out.println(student);
+    }
+}
+                                
+private static void searchStudent() 
+{
+    System.out.print("Enter student name to search: ");
+    String query = scanner.nextLine();
+    for (Student student : students) 
+    {
+        if (student.getName().toLowerCase().contains(query.toLowerCase())) 
+        {
+            System.out.println(student);
+        }
+    }
+}
+                                
+private static void deleteStudent() 
+{
+    System.out.print("Enter student ID to delete: ");
+    int id = scanner.nextInt();
+    scanner.nextLine(); 
+                                
+    students.removeIf(student -> student.getId() == id);
+    System.out.println("Student deleted.");
+}
+}
+
+                                
+                            </code>
+                        </pre>
+                    </div>
+                    <div id="out-sec3">
+                        <h3>Project Output</h3>
+                       <pre><code>
+Student Management System
+1. Add Student
+2. View Students
+3. Search Student
+4. Delete Student
+5. Exit
+Choose an option: 1
+Enter student name: Safrin
+Enter student age: 19
+Enter student grade: A
+Student added: Student ID: 1, Name: Safrin, Age: 19, Grade: A
+
+Student Management System
+1. Add Student
+2. View Students
+3. Search Student
+4. Delete Student
+5. Exit
+Choose an option: 1
+Enter student name: Nisha
+Enter student age: 19
+Enter student grade: A
+Student added: Student ID: 2, Name: Nisha, Age: 19, Grade: A
+
+Student Management System
+1. Add Student
+2. View Students
+3. Search Student
+4. Delete Student
+5. Exit
+Choose an option: 1
+Enter student name: Suufiya
+Enter student age: 18
+Enter student grade: B
+Student added: Student ID: 3, Name: Suufiya, Age: 18, Grade: B
+
+Student Management System
+1. Add Student
+2. View Students
+3. Search Student
+4. Delete Student
+5. Exit
+Choose an option: 3
+Enter student name to search: Nisha
+Student ID: 2, Name: Nisha, Age: 19, Grade: A
+
+Student Management System
+1. Add Student
+2. View Students
+3. Search Student
+4. Delete Student
+5. Exit
+Choose an option: 4
+Enter student ID to delete: 2
+Student deleted.
+
+Student Management System
+1. Add Student
+2. View Students
+3. Search Student
+4. Delete Student
+5. Exit
+Choose an option: 2
+Student ID: 1, Name: Safrin, Age: 19, Grade: A
+Student ID: 3, Name: Suufiya, Age: 18, Grade: B
+
+Student Management System
+1. Add Student
+2. View Students
+3. Search Student
+4. Delete Student
+5. Exit
+Choose an option: 5
+Exiting...
+                       </code></pre>
+                    </div>
+            </div>
+    </div>
+    <div id="pro4">
+        <input type="checkbox" id="toggle4">
+        <div id="cont4">
+            <label for="toggle4">
+            <img src="Portfolio Src Img/pro4.jpg" alt="C" width="180px" height="100px">
+            <h2>PERFUMY SHOWCASE WEBSITE</h2>
+            <h4>HTML & CSS</h4>
+            </label>   
+            <div id="code-sec4">
+                <h3>Project Code</h3>
+                <pre>
+                    <code>
+
+&lt;!DOCTYPE html&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;Perfume Showcase Website.css&quot;&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;Perfumy&lt;/title&gt;
+&lt;link rel=&quot;icon&quot; href=&quot;img1.jpg&quot;&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class=&quot;Header&quot;&gt;
+&lt;nav&gt;
+&lt;h1&gt;Perfumy&lt;/h1&gt;
+&lt;ul&gt;
+    &lt;li&gt;Home|&lt;/li&gt;
+    &lt;li&gt;Products|&lt;/li&gt;
+    &lt;li&gt;About|&lt;/li&gt;
+    &lt;li&gt;Contact&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+&lt;div class=&quot;Search&quot;&gt;
+&lt;center&gt;
+&lt;input type=&quot;text&quot; placeholder=&quot;Search&quot;&gt;
+&lt;/center&gt;
+&lt;/div&gt;
+&lt;div class=&quot;products&quot;&gt;
+&lt;div class=&quot;box&quot;&gt;
+&lt;img src=&quot;img1.jpg&quot; width=&quot;250px&quot; height=&quot;250px&quot;&gt;
+&lt;p&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique
+ odit numquam reiciendis excepturi libero&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;box&quot;&gt;
+&lt;img src=&quot;img2.jpg&quot; width=&quot;250px&quot; height=&quot;250px&quot;&gt;
+&lt;p&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique 
+odit numquam reiciendis excepturi libero&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;box&quot;&gt;
+&lt;img src=&quot;img3.jpg&quot; width=&quot;250px&quot; height=&quot;250px&quot;&gt;
+&lt;p&gt;Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique odit 
+numquam reiciendis excepturi libero&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;about&quot;&gt;
+&lt;h1&gt;About Us&lt;/h1&gt;
+&lt;p&gt;Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt, saepe. Placeat 
+reprehenderit aperiam error doloribus repudiandae, corporis cupiditate vitae recusandae, animi
+ tenetur laboriosam. Dolorem odio suscipit doloribus architecto et tempore ullam qui eaque dolorum 
+ totam eveniet excepturi optio est aut molestias, ea nihil hic cumque ipsa minus eos quis? Nam, 
+ obcaecati eos quisquam sint laudantium id. Voluptas quis beatae molestias perferendis molestiae
+  nostrum repellendus id ab, laboriosam corrupti reiciendis! Praesentium&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;contact&quot;&gt;
+&lt;nav&gt;
+&lt;h3&gt;Contact&lt;/h3&gt;
+&lt;h3&gt;+91 7098654679&lt;/h3&gt;
+&lt;h3&gt;perfumy@gmail.com&lt;/h3&gt;
+&lt;p&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dicta necessitatibus vel nemo 
+hic modi nulla, possimus eaque veritatis doloremque consequuntur illo ad deserunt, debitis fugit 
+velit corporis animi dolor quibusdam mollitia libero ipsa! Quibusdam veniam qui possimus
+nobis eligendi.&lt;/p&gt;
+&lt;/nav&gt;
+&lt;/div&gt;
+&lt;/html&gt;
+
+
+</code></pre>
+<pre>
+    *{
+        padding: 0px;
+        Margin:0px;
+        border:0px;
+    }
+    nav{
+        background-color: black;
+        padding:10px;
+    }
+    h1{
+        color:white;
+        display:inline;
+        margin-left: 10px;
+    }
+    li{
+        color:rgb(171, 162, 162);
+        cursor:pointer;
+        display :inline;
+    }
+    li:hover{
+        color:white;
+    }
+    ul{
+        display:inline;
+        margin-left: 900px;
+    }
+    input{
+        padding:10px;
+        width:70%;
+        border-color: black;
+        border-width: 2px;
+        border-style:solid;
+    }
+    .Search{
+        padding:50px;
+    }
+    .box{
+        border-color: black;
+        border-width:2px;
+        border-style:solid;
+        display:inline-block;
+        width : 250px;
+        margin-left: 10px;
+        cursor:grab;
+        
+    }
+    .box:hover{
+        background-color: black;
+        color: white;
+    }
+    .products{
+        text-align: center;
+    }
+    .about{
+        h1{
+            color:black;
+        }
+        text-align: center;
+        margin-top: 20px;
+        p{
+            padding-top: 10px;
+        }
+    }
+    .contact{
+        h3{
+            text-align: center;
+            color:white;
+            cursor:pointer;
+        }
+        margin-top:20px;
+        padding-top:10px;
+    
+        p{
+            text-align:center ;
+            margin-top: 30px;
+            color:antiquewhite;
+        }
+    }
+    
+</pre>
+                                </div>
+        <div id="out-sec4">
+        <h3>Project Output</h3>
+        <center>
+        <video width="400" height="350" controls>
+        <source src="Portfolio Src Img/pro4-output.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+        </center>
+        </div>
+    </div>
+    </div>                                  
+    <div id="pro5">
+        <input type="checkbox" id="toggle5">
+        <div id="cont5">
+            <label for="toggle5">
+            <img src="Portfolio Src Img/pro5.png" alt="C" width="180px" height="100px">
+            <h2>LANDING PAGE - Coundown Timer</h2>
+            <h4>HTML,CSS,JavaScript </h4>
+            </label>   
+            <div id="code-sec5">
+                <h3>Project Code</h3>
+                <pre>
+                    <code>
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Landing Page&lt;/title&gt;
+    &lt;link rel="icon" href="Source Img/img.jpg"&gt;
+    &lt;link rel="stylesheet" href="Landing Page.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;header&gt;
+        &lt;h1&gt;Get Ready for the Blockbuster📹 !&lt;/h1&gt;
+        &lt;p&gt;Be the first to see the trailer ! Mark your calendars for the release&lt;/p&gt;
+    &lt;/header&gt;
+    
+    &lt;center&gt;
+    &lt;iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/aXE43XtUlX4?si=ooyalxekBpMUC6no" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope;
+     picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+     allowfullscreen&gt;&lt;/iframe&gt;
+    &lt;/center&gt;
+    
+    &lt;p&gt;The wait is over ! Your movie experience starts in :&lt;/p&gt;
+    
+    &lt;table id="countdown"&gt;
+        &lt;tr id="countdown-timer"&gt;
+            &lt;td&gt;
+                &lt;div class="countdown-box"&gt;
+                    &lt;span id="days"&gt;&lt;/span&gt;
+                    &lt;span&gt;Days&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/td&gt;
+            &lt;td&gt;
+                &lt;div class="countdown-box"&gt;
+                    &lt;span id="hours"&gt;&lt;/span&gt;
+                    &lt;span&gt;Hours&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/td&gt;
+            &lt;td&gt;
+                &lt;div class="countdown-box"&gt;
+                    &lt;span id="minutes"&gt;&lt;/span&gt;
+                    &lt;span&gt;Minutes&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/td&gt;
+            &lt;td&gt;
+                &lt;div class="countdown-box"&gt;
+                    &lt;span id="seconds"&gt;&lt;/span&gt;
+                    &lt;span&gt;Seconds&lt;/span&gt;
+                &lt;/div&gt;
+            &lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/table&gt;
+
+    &lt;div id="Notify"&gt;
+        &lt;p&gt;Stay tuned for more sneak peeks !&lt;/p&gt;
+        &lt;form&gt;
+        &lt;input type="email" placeholder="Enter your email address" required&gt;
+        &lt;button type="submit"&gt;Notify me!&lt;/button&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+    
+    &lt;footer&gt;
+        &lt;p&gt;&copy; 2024 [Iron Man]. All rights reserved&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+&lt;script&gt;
+    const countDownDate = new Date("June 30, 2024 00:00:00").getTime();
+
+function updateTimer() {
+    const now = new Date().getTime();
+    const distance = countDownDate - now;
+
+    if (distance < 0) {
+        clearInterval(interval);
+        document.getElementById("countdown").innerHTML = "&lt;p&gt;Countdown expired!&lt;/p&gt;";
+        return;
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    document.getElementById("days").textContent = days;
+    document.getElementById("hours").textContent = hours;
+    document.getElementById("minutes").textContent = minutes;
+    document.getElementById("seconds").textContent = seconds;
+}
+
+updateTimer(); 
+const interval = setInterval(updateTimer, 1000); 
+&lt;/script&gt;
+</code></pre>
+<pre>
+    *{
+        padding: 0px;
+        margin:0px;
+    }
+    body{
+        margin-left:150px;
+        margin-right: 150px;
+        border : 2px solid black;
+        border-radius: 20px;
+        background-color: #d8c2c2;
+        color:#f0f0f0;
+        
+    }
+    header,iframe,footer{
+        margin-left:50px;
+        margin-right: 50px;
+    }
+    header{
+        background-color: #761616d7; 
+        color:#f0f0f0;
+        text-align: center;
+        padding:10px;
+        padding-bottom: 30px;
+        margin:20px;
+        border : 2px solid black;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        box-shadow: 2px 2px 4px black;
+        p{
+            padding-top: 10px;
+            color:#f0f0f0;
+        }
+    }
+    iframe{
+        padding:10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    p{
+        text-align: center;
+        font-size: x-large;
+        font-weight: bold;
+        color:black;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    
+    }
+    #countdown{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        font-size: larger;
+        border-spacing:10px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #countdown-timer span{
+        display:inline-block;
+        padding-bottom: 15px;
+        width:100%;
+    }
+    .countdown-box {
+        border: 2px solid black; 
+        background-color: #761616d7;
+        padding: 10px;
+        box-shadow: 2px 2px 4px black;
+    }
+    #Notify{
+        text-align: center;
+        
+        p{
+            font-size: x-large;
+            font-weight: 600;  
+        }
+        input{
+            border:2px solid black;
+            box-shadow: 2px 2px 4px black;
+            padding: 15px 30px;
+        }
+        button{
+            border:2px solid black;
+            background-color: #761616d7;
+            box-shadow: 2px 2px 4px black;
+            color:#f0f0f0;
+            font-weight: 600;
+            padding: 15px 30px;
+        }
+    }
+    
+    footer{
+        background-color: #761616d7;
+        color:#f0f0f0;
+        text-align: center;
+        padding:20px;
+        margin:20px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        box-shadow: 2px 2px 4px black;
+        p{
+            color:#f0f0f0;
+        }
+    }
+</pre>
+</div>
+
+<div id="out-sec5">
+    <h3>Project Output</h3>
+    <center>
+    <video width="400" height="350" controls>
+    <source src="Portfolio Src Img/pro5-output.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+    </center>
+    </div>
+</div>
+</div>    
+<div id="pro6">
+    <input type="checkbox" id="toggle6">
+    <div id="cont6">
+        <label for="toggle6">
+        <img src="Portfolio Src Img/pro6.jpg" alt="C" width="180px" height="100px">
+        <h2>CALCULATOR</h2>
+        <h4>HTML,CSS,JavaScript </h4>
+        </label>   
+        <div id="code-sec6">
+            <h3>Project Code</h3>
+            <pre>
+                <code>
+
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;link rel="stylesheet" href="new.css"&gt;
+        &lt;style&gt;
+            * {
+                margin: 0;
+                padding: 0;
+                font-family: 'Poppins', sans-serif;
+                box-sizing: border-box;
+            }
+            .container {
+                width: 100%;
+                height: 100vh;
+                background: #e3f9ff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .calculator {
+                background: #3a4452;
+                padding: 20px;
+                border-radius: 10px;
+            }
+            .calculator form input {
+                border: 0;
+                outline: 0;
+                width: 60px;
+                height: 60px;
+                border-radius: 10px;
+                box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1), 5px 5px 15px rgba(0, 0, 0, 0.2);
+                background: transparent;
+                font-size: 20px;
+                color: #fff;
+                cursor: pointer;
+                margin: 10px;
+            }
+            form .display{
+                display:flex;
+                justify-content: flex-end;
+                margin: 20px 0;
+            }
+            form .display input {
+                text-align: right;
+                flex: 1;
+                font-size: 45px;
+                box-shadow: none;
+            }
+            form input.equal {
+                width: 145px;
+            }
+            form input.operator {
+                color: #33ffd8;
+            }
+        &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div class="container"&gt;
+            &lt;div class="calculator"&gt;
+                &lt;form name="calc"&gt;
+                    &lt;div class="display"&gt;
+                        &lt;input type="text" name="display"&gt;
+                    &lt;/div&gt;
+        &lt;div&gt;
+            &lt;input type="button" value="AC" onclick="display.value = ''" class="operator"&gt;
+            &lt;input type="button" value="DE" 
+            onclick="display.value = display.value.toString().slice(0, -1)" class="operator"&gt;
+            &lt;input type="button" value="." onclick="display.value += '.'" class="operator"&gt;
+        &lt;input type="button" value="/" onclick="display.value += '/'" class="operator"&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;input type="button" value="7" onclick="display.value += '7'"&gt;
+            &lt;input type="button" value="8" onclick="display.value += '8'"&gt;
+            &lt;input type="button" value="9" onclick="display.value += '9'"&gt;
+            &lt;input type="button" value="*" onclick="display.value += '*'" class="operator"&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;input type="button" value="4" onclick = "display.value += '4'"&gt;
+            &lt;input type="button" value="5" onclick="display.value += '5'"&gt;
+            &lt;input type="button" value="6" onclick="display.value += '6'"&gt;
+            &lt;input type="button" value="-" onclick="display.value += '-'" class="operator"&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;input type="button" value="1" onclick="display.value += '1'"&gt;
+            &lt;input type="button" value="2" onclick="display.value += '2'"&gt;
+            &lt;input type="button" value="3" onclick="display.value += '3'"&gt;
+            &lt;input type="button" value="+" onclick="display.value += '+'" class="operator"&gt;
+        &lt;/div&gt;
+        &lt;div&gt;
+            &lt;input type="button" value="00" onclick="display.value += '00'"&gt;
+            &lt;input type="button" value="0" onclick="display.value += '0'"&gt;
+            &lt;input type="button" value="=" onclick="display.value = eval(display.value)" 
+            class="equal operator"&gt;
+        &lt;/div&gt;
+                &lt;/form&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+</div>
+<div id="out-sec6">
+    <h3>Project Output</h3>
+    <center>
+    <video width="400" height="350" controls>
+    <source src="Portfolio Src Img/pro6-output.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+    </center>
+    </div>
+</div>
+</div> 
+</div> 
+
+<div id="Resume">
+    <h1>RESUME</h1>
+    <h3><a href="Resume.pdf">🖺SafrinNisha_Resume</a></h3>
+</div>
+        
+<footer>
+    <h1>CONTACT INFORMATION</h1>
+        <nav>
+            <h3><a href="tel:7092042565">Phone Number:7092042565 </a>| </h3>
+            <h3><a href="mailto:164safrin@gmail.com">E-mail:164safrin@gmail.com </a> | </h3>
+            <h3><a href="www.linkedin.com/in/safrin-nisha164">LinkedIn:Safrin Nisha | </a></h3>
+            <h3><a href="https://github.com/Safrin164/Safrin_Nisha.git">GitHub:Safrin_Nisha | </a></h3>
+        </nav>
+</footer>
+    
+</body>
+</html>
